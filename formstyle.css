@@ -2,7 +2,7 @@ body {
   margin: 2em;
 }
 aside {
-    background: #008080;
+    background: #ffb347;
     padding: 0.3em 1em;
     border-radius: 3px;
     color: #fff;
@@ -24,7 +24,7 @@ textarea {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: #008080
+  background: #ffb347
 }
 .button-xlarge {
   font-size: 125%;

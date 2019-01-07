@@ -4,13 +4,13 @@
 <link rel="shortcut icon" href="images/icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://use.edgefonts.net/atomic-age;asap.js"></script>
-<title>Sunset Travel | Contact Form</title>
+<title>ASC | Order Form</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <h2 class="content-head is-center">Contact Us!</h2>
 <aside>
-<p>Thank You for chosing to contact <b>Sunset Travel</b><br>Please fill in the form below and we will be in touch soon<br><a href="javascript:history.back();;" style="color: white;">Return To Previous Page</a></p>
+<p>Thank You for chosing to contact <b>Sunset Travel</b><br>Please fill in the form below and we will be in touch soon<br><a href="javascript:window.open('','_self').close();" style="color: white;">Return To Previous Page</a></p>
 </aside>
 
 
@@ -18,10 +18,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="formstyle.css">
 
-
-     <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action="https://www.enformed.io/7rjsxj6f">
-
+<form action="https://www.enformed.io/st8yy2ro" method="POST" >
 
 
     <div class="form-elements">
@@ -30,6 +27,11 @@
         <input id="name" required name="name" placeholder="Full Name" />
       </fieldset>
 
+	  <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Company: </label>
+        <input id="company" name="company" placeholder="Company Name (Optional)" />
+      </fieldset>
 
        <fieldset class="pure-group">
         <label for="email">Email Address:</label>
@@ -42,13 +44,10 @@
 	  <fieldset class="pure-group">
         <label for="message">Message: </label>
         <textarea id="message" name="message" required rows="10"
-        placeholder="Ask your questions here..."></textarea>
-      </fieldset>
+        placeholder="Place all details of your order here..."></textarea>
+    </fieldset>
 
-
-<input type="hidden" name="*subject" value="Contactform" />
-
-<input type="hidden" name="*redirect" value="https://alex-sandham.github.io/thankyou.html" />
+      <input type="hidden" name="*subject" value="Orderform" />
 
 
 
@@ -67,5 +66,9 @@
 <footer>
 <br><br>
 <hr>
-<p style="float: left;">&copy Sunset Travel 2018</p>
+<p style="float: left;">&copy Sunset Travel 2018</p><p style="float: right;"><a href="contactform.html">Contact Us</a></p>
 </footer>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'alexsandhamcreative' + '@' + 'photographer' + '.' + 'net');
+</script>

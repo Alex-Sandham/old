@@ -81,7 +81,7 @@ footer {
 	display: inline;
 }
 .active {
-    background-color: #008080;
+    background-color: #ffb347;
 }
 
 img {
@@ -197,19 +197,19 @@ body, html {
 
 
 a{
-	color: #008080;
+	color: #ffb347;
 }
 
 a:hover {
-    color: #008080;
+    color: #ffb347;
 }
 a:visited {
-	color: #008080;
+	color: #ffb347;
 }
 
 .myBtn, .myBtn2 {
   border-radius: 4px;
-  background-color: #008080;
+  background-color: #ffb347;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -314,7 +314,7 @@ a:visited {
 
 .modal-header, .modal-header1 {
     padding: 2px 16px;
-    background-color: #008080;
+    background-color: #ffb347;
     color: white;
 }
 
@@ -322,7 +322,7 @@ a:visited {
 
 .modal-footer, .modal-footer1 {
     padding: 2px 16px;
-    background-color: #008080;
+    background-color: #ffb347;
     color: white;
 }
 
@@ -331,4 +331,44 @@ a:visited {
 }
 .itemUnderline{
 	color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffb347;
+  color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ffb347;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
