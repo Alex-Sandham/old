@@ -287,7 +287,6 @@ a:visited {
     animation-duration: 0.4s;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
@@ -298,7 +297,6 @@ a:visited {
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
 .close, .close1 {
     color: white;
     float: right;
@@ -371,4 +369,10 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.mySlides{
+	height: 100%;
+	width:100%;
+	margin: auto
 }

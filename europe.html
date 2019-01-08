@@ -11,11 +11,23 @@
 <div class="page-wrapper">
 <h1 id="titlebar">Sunset Travel</h1>
 <ul id="navbar">
-  <li id="navpage"><a id="navlink" href="index.html">Home</a></li>
-  <li id="navpage"><a id="navlink" class="active" href="#About">About</a></li>
-  <li id="navpage"><a id="navlink" href="store.html">Store</a></li>
+  <li id="navpage"><a id="navlink"  href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Locations</a>
+    <div class="dropdown-content">
+    <a href="#europe" class="active">Europe</a>
+    <a href="asia.html">Asia</a>
+    <a href="#">Africa</a>
+    </div>
+  </li>
   <li id="navpage"><a id="navlink" href="contactform.html">Contact Us</a></li>
 </ul>
+<br>
+<img class="mySlides" src="images/banner.png">
+<img class="mySlides" src="images/banner2.png">
+<img class="mySlides" src="images/banner3.png">
+<img class="mySlides" src="images/banner4.png">
+<br><br><br>
 <div id="panel">
 <h4 id="ptitle">Top 5 Tips for traveling through Europe</h4>
 <p id="panel">Traveling through Europe can be difficult, to help with your travel we&apos;ve created this list to help you enjoy your holiday a little more.<br></p>
@@ -28,20 +40,34 @@
 	<li><br><b>5: Bring a Suitcase You Can Carry</b><br>Navigating the train station, walking on cobblestone streets, carrying your luggage up several flights of stairs at your hotel (often European hotels don’t have elevators) or accruing extra baggage fees, packing light in a suitcase you can carry is a must! You won’t need as much as you think and laundromats are readily available throughout Europe if you need to do laundry during your trip.</li>
 </ul>
 <br>
-<p id="panel">Where are we?</p>
+<p id="panel"><ins><b>Where are we?</b></ins></p>
 <br>
 <ul id="charities">
-	<li>Paris - France</li>
-	<li><a href = "https://www.cancerresearchuk.org/" target="_blank" >Cancer Research UK</a></li>
-	<li><a href = "https://www.rspca.org.uk/" target="_blank" >RSPCA</a></li>
-	<li><a href = "https://www.acorns.org.uk/" target="_blank" >Acorns Childrens Hospice</a></li>
-	<li>And many other UK based charities....</li>
+	<li>&bull;Paris - France</li>
+	<li>&bull;Frankfurt - Germany</li>
+	<li>&bull;Stockholm - Sweeden</li>
+	<li>&bull;Berlin - Germany</li>
 </ul>
 </div>
 </div>
 <footer>
 <br><br>
 <hr>
-<p>*Including P&P </p>
 <p style="float: left;">&copy Sunset Travel 2018</p><p style="float: right;"><a href="contactform.html">Contact Us</a></p>
 </footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="images/icon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://use.edgefonts.net/atomic-age;asap.js"></script>
+<title>Sunset Travel | Asia Locations and Tips</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="page-wrapper">
+<h1 id="titlebar">Sunset Travel</h1>
+<ul id="navbar">
+  <li id="navpage"><a id="navlink"  href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Locations</a>
+    <div class="dropdown-content">
+    <a href="europe.html">Europe</a>
+    <a href="#asia" class="active">Asia</a>
+    <a href="africa.html">Africa</a>
+    </div>
+  </li>
+  <li id="navpage"><a id="navlink" href="contactform.html">Contact Us</a></li>
+</ul>
+<br>
+<img class="mySlides" src="images/banner.png">
+<img class="mySlides" src="images/banner2.png">
+<img class="mySlides" src="images/banner3.png">
+<img class="mySlides" src="images/banner4.png">
+<br><br><br>
+<div id="panel">
+<h4 id="ptitle">Top 5 Tips for traveling through Asia</h4>
+<p id="panel">Traveling through Asia can be difficult, to help with your travel we&apos;ve created this list to help you enjoy your holiday a little more.<br></p>
+<br>
+<ul id="camera">
+	<li><b>1: Check Visa Requirements</b><br>One guaranteed way to ruin your trip is being denied entry into the country you are visiting because you don’t have a tourist visa. Be aware if you have a criminal record you may struggle getting a visa.</li>
+	<li><br><b>2: Travel in the Off Season</b><br>While you might dream of sunbathing upon the Mediterranean beaches during the summer months, so does the rest of Asia — causing overcrowded beaches and long queues at tourist attractions.<br>Traveling during the off season is the best way to avoid the crowds and save money on accommodations, airfare, train tickets and tours. Most of the main tourist attractions are open year-round, just make sure to check closing times as some might have shorter hours during the off-peak travel season.</li>
+	<li><br><b>3: Make Reservations in Advance</b><br>Making reservations in advance is the best way to secure accommodations and tours, especially in peak travel season. Booking airfare, hotels, train tickets, and tours in advance also ensures that you are getting the best price.</li>
+	<li><br><b>4: Bring Comfortable Shoes to Walk Everywhere</b><br>As one of the best ways to explore a city, you will do lots of walking during your Asian A, therefore having a pair of comfortable walking shoes is a must. After a long day of walking around the city, your feet will thank you!</li>
+	<li><br><b>5: Bring a Suitcase You Can Carry</b><br>Navigating the train station, walking on cobblestone streets, carrying your luggage up several flights of stairs at your hotel or accruing extra baggage fees, packing light in a suitcase you can carry is a must! You won’t need as much as you think and laundromats are readily available throughout Asia if you need to do laundry during your trip.</li>
+</ul>
+<br>
+<p id="panel"><ins><b>Where are we?</b></ins></p>
+<br>
+<ul id="charities">
+	<li>&bull;Tokyo - Japan</li>
+	<li>&bull;Shenzhen - China</li>
+	<li>&bull;Shanghai - China</li>
+	<li>&bull;Moscow - Russia</li>
+</ul>
+</div>
+</div>
+<footer>
+<br><br>
+<hr>
+<p style="float: left;">&copy Sunset Travel 2018</p><p style="float: right;"><a href="contactform.html">Contact Us</a></p>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
