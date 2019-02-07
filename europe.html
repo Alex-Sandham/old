@@ -17,7 +17,7 @@
     <div class="dropdown-content">
     <a href="#europe" class="active">Europe</a>
     <a href="asia.html">Asia</a>
-    <a href="#">Africa</a>
+    <a href="africa.html">Africa</a>
     </div>
   </li>
   <li id="navpage"><a id="navlink" href="contactform.html">Contact Us</a></li>
@@ -63,11 +63,11 @@ function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+      x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000);    
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
 }
 </script>
