@@ -23,10 +23,8 @@
   <li id="navpage"><a id="navlink" href="contactform.html">Contact Us</a></li>
 </ul>
 <br>
-<img class="mySlides" src="images/banner.png">
-<img class="mySlides" src="images/banner2.png">
-<img class="mySlides" src="images/banner3.png">
-<img class="mySlides" src="images/banner4.png">
+<img class="mySlides" src="images/asia1.jpg">
+<img class="mySlides" src="images/asia2.jpg">
 <br><br><br>
 <div id="panel">
 <h4 id="ptitle">Top 5 Tips for traveling through Asia</h4>
@@ -63,11 +61,11 @@ function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+      x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000);    
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
 }
 </script>
